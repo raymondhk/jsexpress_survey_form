@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .form-group{
+            color: bllack;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            text-decoration: underline;
+        }
+        #wrapper{
+            border: 1px solid black;
+            background-color: #acc3d8;
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+        td{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="wrapper">
+                <h1>Submitted Information:</h1>
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td><%= data.name %></td>
+                            </tr>
+                            <tr>
+                                <td>Dojo Location:</td>
+                                <td><%= data.loc %></td>
+                            </tr>
+                            <tr>
+                                <td>Favorite Language:</td>
+                                <td><%= data.lang %></td>>
+                            </tr>
+                            <tr>
+                                <td>Comment:</td>
+                                <td><%= data.comment %></td>>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="/" class="btn btn-default">Home</a>
+                </div> 
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>

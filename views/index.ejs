@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .form-group{
+            color: white;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        #wrapper{
+            border: 1px solid black;
+            background-color: #3e4d5c;
+            padding-top: 10px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="wrapper">
+                <h1>Dojo Survey</h1>
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form action="/result" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="loc">Dojo Location:</label>
+                            <select class="form-control" id="loc" name="loc">
+                                <option>Washington D.C</option>
+                                <option>New York</option>
+                                <option>Seattle</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lang">Favorite Language</label>
+                            <select class="form-control" id="lang" name="lang">
+                                <option>Python</option>
+                                <option>Javascript</option>
+                                <option>Java</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-default">
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
